@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col s12">
+        <!-- Page Title -->
+        <h4 class="blue-text text-darken-4" ng-hide="lockout">Keys</h4>
+        <!--Show when user has not logged in -->
+        <div class="center flow-text" ng-show="lockout">            
+            <i class="large material-icons red-text">block</i>
+            <h4>Please Log In</h4>
+            <h6>Click the Title to go back to the Log-In page</h6>            
+        </div>        
+        <ul class="collapsible">
+            <li class="flow-text"  ng-repeat="x in keysTopics">
+                <!-- Topic title -->
+                <div class="collapsible-header">                    
+                    <a id="{{x.topicID}}"><i class="material-icons hashtagPlusIcon">add_circle</i>{{x.mainTopic}}</a>
+                </div>
+                <div class="collapsible-body">
+                    <div class="card grey lighten-4">
+                        <!-- Reccommended agent actions title and content -->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons green-text">assignment</i>Helpful Hints</h5></span>
+                            <ul class="browser-default">
+                                <li ng-repeat="actions in x.agentActions">{{actions}}</li>
+                            </ul>
+                        </div>
+                        <!-- Reccommended Last Resort title and content -->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons red-text">warning</i>Last Resort</h5></span>
+                            <ul class="browser-default">
+                                <li ng-repeat="last in x.lastResort">{{last}}</li>
+                            </ul>
+                        </div>
+                        <!-- Reccommended Follow-Up title and content -->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons blue-text">add_alarm</i>Follow Up Later</h5></span>
+                            <ul class="browser-default">
+                                <li ng-repeat="follow in x.followUp">{{follow}}</li>
+                            </ul>
+                        </div>                        
+                        <!-- Regulation Title and content-->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons purple-text">bookmark_border</i>Regulation</h5></span>
+                            <p ng-repeat="regs in x.regulation">{{regs}}</p>
+                        </div>                        
+                        <!-- Additional topics title and contents-->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons amber-text text-accent-3">lightbulb_outline</i>Additional Topics to Investigate</h5></span>
+                            <p class="blueTopics" ng-repeat="topics in x.additonalTopics" id="{{topics.subID}}"> {{topics.subTopic}}</p>
+                        </div>                        
+                    </div>
+                </div>
+            </li>        
+        </ul>
+        
+        
+    </div>
+</div>
+<script>
+    /*code for collapsible hashtags*/
+    var hashtags = document.querySelector('.collapsible');
+    var instance = M.Collapsible.init(hashtags);    
+</script>

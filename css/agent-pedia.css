@@ -1,0 +1,193 @@
+/*          ENTIRE DOM*/
+/*reset row margin to limit white space between div*/
+.row {
+    margin: 0;
+}
+
+/*css to center all h4 or Page Title */
+h4 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+/*              Log-IN Page */
+/*color for the logIn fail message*/
+.logInFailColor {
+    color: red;
+}
+
+/*change the font size and weight of the logIN page input box's label*/
+.input-field>label {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+/*make the login page's submit button round and better readability*/
+input[type="submit"] {
+    border-radius: 25px;/*make the button round*/
+    letter-spacing: 2px; /*add letter spacing to the text inside the buttons*/
+}
+
+
+/*medium and up screens*/
+  @media only screen and (min-width: 500px) {
+      /*increase the margin on the logIn.html page between the log and top of page*/
+      .logInDiv {
+          margin-top: 90px;
+      }
+}
+
+/*super small screens*/
+  @media only screen and (max-width: 350px) {
+    /*decrease size of app's title on super small screens*/
+    nav .brand-logo {
+        font-size: 1.9rem;
+    }
+}
+      
+
+
+/*              NAV INDEX.HTML*/
+/*CSS for the nav menu button. Make it bigger and give it a solid border to stand out*/
+#navMenuButton {
+    border: 1px solid blue;
+    padding-left: 10px;/*give space to the side of the element*/
+    padding-right: 10px;/*give space to the side of the element*/
+}
+
+/*CSS for the navigational menu on the main page*/
+.sidenav li>a {
+    color:navy; /*give the element text color*/
+    text-decoration: underline; /*underline a element*/
+    margin-top: 30px; /*add space to the top of each element*/
+    margin-bottom: 30px; /*add space to the bottom of each element*/
+    text-align: center; /*center align nav elements*/
+}
+
+/*css to bring icon and text closer*/
+.sidenav li>a>i.material-icons {
+    margin-right: 0;
+    color: navy;
+}
+
+/*Increase size and font weight of navigation Brand logo title*/
+a.brand-logo {
+    //font-size: 40px;
+    font-weight: bolder;
+    
+}
+
+/*fixed the something that Material CSS cause dark color shade on side nav*/
+.sidenav-overlay {
+    background-color: rgba(0,0,0,0);
+}
+
+/*change the size of the mobile side navbar*/
+ul#mobile.sidenav {
+    width: 200px;
+}
+
+/*add right side margin to the nav search linke*/
+.rightSideMarginSearch {
+    padding-right: 50px;
+}
+
+/*Mobile or small screen*/
+  @media only screen and (max-width: 500px) {
+      
+    /*decrease the right side margin to the nav search linke*/
+    .rightSideMarginSearch {
+        padding-right: 20px;
+    }  
+    /*decrease the size of the search link in the nav*/  
+    .material-icons.md-48 { font-size: 36px; }      
+      
+} 
+
+
+
+
+
+/*              MAIN PAGE*/
+/*CSS for the side menu "li" on the main page*/
+#sideMenu>li {
+    color:navy; /*give the element text color*/
+    text-decoration: underline; /*underline a element*/
+    margin-top: 80px; /*add space to the top of each element*/
+}
+
+/*add space between main page side menu's icon and the link titles*/
+#sideMenu>li>a>i.material-icons {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+
+
+/*          INDIVIDUAL PAGES */
+/*change color of plus icon along side the hashtag topics*/
+.hashtagPlusIcon {
+    //color: lightskyblue;
+    
+}
+
+/*change color of plus icon along side the hashtag topics when the topic is active (opened)*/
+li.active>div.collapsible-header>a>i.material-icons{
+    color: red;
+
+}
+
+/*add underline to the topics*/
+div.collapsible-header>a {
+    text-decoration: underline;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*change the font-size, therefore the size of the icons in the pages additional content box*/
+h5>i.material-icons {
+    font-size: 21px;
+}
+
+/*add bullet points to unorder list on topic page content area because Materialize CSS code*/
+ul.browser-default li {
+    list-style-type: initial;
+}
+
+/*indent bullets points in reccomended agent actions on topic's page*/
+div> ul.browser-default {
+    padding-left: 65px;
+}
+
+/*Mobile or small screen*/
+  @media only screen and (max-width: 500px) {
+      
+    /*indent bullets points in reccomended agent actions on topic's page*/
+    div> ul.browser-default {
+        padding-left: 50px;
+    }     
+      
+} 
+
+/*indent the content in the regulation and additional topics section of the topic's page*/
+div.card-content p, div.card-content>a   {
+    padding-left: 35px;
+}
+
+/*blue color text for additional topics in topic page*/
+.blueTopics {
+    color: #0078B2;
+}
+
+/*              About Page      */
+/*underline the header for a contribution section on the about page*/
+.underlineContribution {
+    text-decoration-line: underline;
+}

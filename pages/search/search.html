@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col s12">
+        <!-- Page Title -->
+        <h4 class="blue-text text-darken-4" ng-hide="lockout">Search for a Topic</h4>
+            <!--creates a search text-box binding the searchTopic variable to a filter in a combinedTopic database -->
+            <div ng-hide="lockout">
+                <input type='search' class='form-control grey lighten-4' placeholder='Type in a few words' ng-model="searchTopic" autofocus autocomplete="on">
+            </div>
+            <!--Show when user has not logged in -->
+            <div class="center flow-text" ng-show="lockout">            
+                <i class="large material-icons red-text">block</i>
+                <h4>Please Log In</h4>
+                <h6>Click the Title to go back to the Log-In page</h6>         
+            </div>        
+            <br>        
+        <ul class="collapsible">
+            <li class="flow-text"  ng-repeat="x in combinedTopics | filter:{mainTopic:searchTopic}" >
+                <!-- Topic title -->
+                <div class="collapsible-header">                    
+                    <a id="{{x.topicID}}"><i class="material-icons hashtagPlusIcon">add_circle</i>{{x.mainTopic}}</a>
+                </div>
+                <div class="collapsible-body">
+                    <div class="card grey lighten-4">
+                        <!-- Reccommended agent actions title and content -->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons green-text">assignment</i>Helpful Hints</h5></span>
+                            <ul class="browser-default">
+                                <li ng-repeat="actions in x.agentActions">{{actions}}</li>
+                            </ul>
+                        </div>
+                        <!-- Regulation Title and content-->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons red-text">bookmark_border</i>Regulation</h5></span>
+                            <p ng-repeat="regs in x.regulation">{{regs}}</p>
+                        </div>                        
+                        <!-- Additional topics title and contents-->
+                        <div class="card-content">
+                            <span class="card-title"><h5><i class="material-icons amber-text text-accent-3">lightbulb_outline</i>Additional Topics to Investigate</h5></span>
+                            <p class="blueTopics" ng-repeat="topics in x.additonalTopics" id="{{topics.subID}}"> {{topics.subTopic}}</p>
+                        </div>                        
+                    </div>
+                </div>
+            </li>        
+        </ul>
+        
+        
+    </div>
+</div>
+<script>
+    /*code for collapsible hashtags*/
+    var hashtags = document.querySelector('.collapsible');
+    var instance = M.Collapsible.init(hashtags);    
+</script>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+        <!--Import agent-pedia.css-->
+        <link rel="stylesheet" type="text/css" href="css/agent-pedia.css">        
+        
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body ng-app="Agentpedia">
+        <div class="row">
+        <header >
+            <div class="navbar-fixed">        
+              <nav>
+                <!-- top navbar menu -->  
+                <div class="nav-wrapper grey lighten-4">
+                    <a ui-sref="logIn" class="brand-logo center blue-text text-darken-4 flow-text">Agent-pedia</a>
+                    <a class="blue-text text-darken-4" ui-sref="search"><i class="material-icons md-48 right rightSideMarginSearch">search</i></a>
+                    <a href="#" data-target="mobile" class="sidenav-trigger blue darken-4 grey-text text-lighten-4 z-depth-2" id="navMenuButton"><i class="material-icons">menu</i></a>
+                </div>
+              </nav>
+            </div>    
+          <!-- Mobile view Side navbar menu -->    
+          <ul class="sidenav grey lighten-4 blue-text text-darken-4" id="mobile" ng-controller="logInController">
+            <li class="sidenav-close"><a ui-sref="tableGames"><i class="material-icons">casino</i>Table Games</a></li>
+            <li class="sidenav-close"><a  ui-sref="surveillance"><i class="material-icons">videocam</i>Surveillance</a></li>
+            <li class="sidenav-close"><a ui-sref="slots"><i class="material-icons">event_seat</i>Slots</a></li>
+            <li class="sidenav-close"><a ui-sref="keys"><i class="material-icons">vpn_key</i>Keys</a></li>
+            <li class="sidenav-close"><a ui-sref="security"><i class="material-icons">lock_outline</i>Security</a></li>
+            <li class="sidenav-close"><a ui-sref="crimminal"><i class="material-icons">gavel</i>Crimminal</a></li>
+            <li class="sidenav-close"><a ui-sref="onCall"><i class="material-icons">phonelink_ring</i>On Call</a></li>
+            <li class="sidenav-close"><a ui-sref="concepts"><i class="material-icons">school</i>Advance Concepts</a></li>
+            <li class="sidenav-close"><a ui-sref="about"><i class="material-icons">person_outline</i>About</a></li> 
+            <li class="sidenav-close" ng-click="restart()"><a ui-sref="logIn" class="red-text"><i class="material-icons red-text">vpn_key</i>Log Out</a></li>                
+          </ul>
+        </header>
+        </div>
+        <div class="row">    
+        <main>
+            <!-- Desktop view Side navbar menu -->
+            <div class="flow-text hide-on-med-and-down col l3" ng-controller="logInController">
+              <!-- Mobile view Side navbar menu -->    
+              <ul  id="sideMenu">
+                <li><a ui-sref="tableGames"><i class="material-icons">casino</i>Table Games</a></li>
+                <li ><a ui-sref="surveillance"><i class="material-icons">videocam</i>Surveillance</a></li>
+                <li><a ui-sref="slots"><i class="material-icons">event_seat</i>Slots</a></li>
+                <li><a ui-sref="keys"><i class="material-icons">vpn_key</i>Keys</a></li>
+                <li><a ui-sref="security"><i class="material-icons">lock_outline</i>Security</a></li>
+                <li><a ui-sref="crimminal"><i class="material-icons">gavel</i>Crimminal</a></li>                  
+                <li><a ui-sref="onCall"><i class="material-icons">phonelink_ring</i>On Call</a></li>
+                <li><a ui-sref="concepts"><i class="material-icons">school</i>Advance Concepts</a></li>                   
+                <li><a ui-sref="about"><i class="material-icons">person_outline</i>About</a></li>
+                <li ng-click="restart()"><a ui-sref="logIn" class="red-text"><i class="material-icons">vpn_key</i>Log Out</a></li>                   
+              </ul>
+            </div>      
+            <!-- main content area -->
+            <div class="col s12 m12 l9">
+                <div ui-view></div>
+            </div>
+            
+        </main>    
+        </div>       
+        
+          
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+<!--Import angularjs files-->
+<script src="libs/angular.min.js"></script>
+<script src="libs/angular-ui-router.min.js"></script>
+        
+<!--Import javascript files (controller and services) used or called by ui-view -->
+<script src="js/app.js"></script>
+
+<!--Import files for surveillance page-->
+<script src="pages/surveillance/surveillanceController.js"></script>
+<script src="pages/surveillance/surveillance.html"></script>
+<script src="pages/surveillance/surveillanceService.js"></script>        
+        
+<!--Import files for table games page-->
+<script src="pages/tableGames/tableGamesService.js"></script>
+<script src="pages/tableGames/tableGamesController.js"></script>
+<script src="pages/tableGames/tableGames.html"></script>
+        
+<!--Import files for keys page-->
+<script src="pages/keys/keys.html"></script>
+<script src="pages/keys/keysController.js"></script>
+<script src="pages/keys/keysService.js"></script>        
+        
+<!--Import files for security page-->
+<script src="pages/security/security.html"></script>
+<script src="pages/security/securityController.js"></script>        
+<script src="pages/security/securityService.js"></script>
+    
+<!--Import files for slots page-->
+<script src="pages/slots/slots.html"></script>
+<script src="pages/slots/slotsController.js"></script>    
+<script src="pages/slots/slotsService.js"></script>
+
+<!--Import files for crimminal page-->
+<script src="pages/crimminal/crimminal.html"></script>
+<script src="pages/crimminal/crimminalController.js"></script>    
+<script src="pages/crimminal/crimminalService.js"></script>
+        
+<!--Import files for search page-->
+<script src="pages/search/search.html"></script>
+<script src="pages/search/searchController.js"></script>
+        
+<!--Import files for onCall page-->
+<script src="pages/onCall/onCallController.js"></script>
+<script src="pages/onCall/onCallService.js"></script>        
+
+                <!--Import files for concepts page-->
+<script src="pages/concepts/conceptsController.js"></script>
+<script src="pages/concepts/conceptsService.js"></script>
+        
+        <!--Import files for logIN page-->  
+<script src="pages/logIn/logInController.js"></script>
+<script src="pages/logIn/logInService.js"></script>
+      
+<script src="pages/about/about.html"></script>   
+        
+<script>
+    /*code for side navigation*/
+    var elem = document.querySelector('.sidenav');
+    var instance = M.Sidenav.init(elem, {closeOnClick: true});  
+</script>
+    </body>
+</html>

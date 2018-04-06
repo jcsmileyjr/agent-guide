@@ -1,0 +1,27 @@
+<div class="row">
+    <form class="col s12 ">
+        <!-- Page Image and Password UI -->
+        <div class="col s12 m6 offset-m4 flow-text logInDiv">
+            <div class="center-align">
+                <img class="responsive-img" src="/assets/images/mgcLogo-smaller.jpg"alt="MS Gaming Commission logo">            
+            </div>
+            <div class=" input-field">
+                <label for="password">Password</label>
+                <!-- password input field -->
+                <input id="password" type="password" class="validate" ng-model="pwd"  autofocus>
+            </div>
+            <div class="center-align">
+                <!--text use to inform user that the password has failed -->
+                <p class="logInFailColor " ng-show="failedLogIn">Password Failed</p>
+                <!-- submit button for the logIn page. Use a function linked to the logIn controller -->
+                <input class="blue darken-4 white-text" type="submit" value="Log In" ng-click="logPwd(pwd)">
+            </div>
+            <div class="section">
+                <p><em>Field guide for gaming enforcement agents.</em></p>
+            </div>
+        </div>        
+        
+    </form>
+</div>
+<script>   
+</script>
