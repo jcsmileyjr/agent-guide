@@ -34,7 +34,7 @@
                         <div class="card-content">
                             <span class="card-title"><h5><i class="material-icons blue-text">add_alarm</i>Follow Up Later</h5></span>
                             <ul class="browser-default">
-                                <li ng-repeat="follow in x.followUp">{{follow}}</li>
+                                <li ng-repeat="follow in x.followUp track by $index">{{follow}}</li>
                             </ul>
                         </div>                        
                         <!-- Regulation Title and content-->

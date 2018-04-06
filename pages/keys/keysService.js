@@ -13,8 +13,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -34,8 +34,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit amet, adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -55,8 +55,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -76,8 +76,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -97,8 +97,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit amet, consectetur elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -118,8 +118,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur elit. Integer nec odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -139,8 +139,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed.",
+            "Lorem dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -160,8 +160,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing. Integer nec odio. Praesent libero. Sed cursu."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
@@ -181,8 +181,8 @@ myApp.factory('KeysTopics',  function () {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ], 
 		"followUp":[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursu."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent . Sed cursu.",
+            "Lorem dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."
         ],       
 		"additonalTopics": [
 		  {"subID":"Lorem ipsum dolor si.", "subTopic":"Lorem ipsum dolor sit amet, consectetur adipiscin."}, 
