@@ -53,4 +53,15 @@ I wanted a tool to list all the different ways to apply the gaming regulation to
  
  **CSS:** A formatting language for styling web pages
 
+### The production version was deployed with the following technologies:
+
+**Heroku:** A cloud platform (PaaS) for deploying web apps
+
+**Node:** Server side development platform created to run JavaScript
+
+**Express:** A Node.js web application server framework
+Create by JC Smiley in May of 2017
+
+(production code is private due to sensitive information)
+
 *Create by JC Smiley in March of 2018*
