@@ -41,7 +41,7 @@ I wanted a tool to list all the different ways to apply the gaming regulation to
 
 ### This app was built with the following technologies:
 
- **Materialize CSS:** Web development framework for developing responsive, mobile first front-end projects
+ **Materialize CSS:** Web development framework for developing responsive, mobile first front-end projects based on Google's Material Design language.
  
  **AngularJS:** JavaScript-based front-end framework for building single page web applications.
  
